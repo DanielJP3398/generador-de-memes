@@ -1,0 +1,534 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* *******************************************************
+            *CAMBIAR A MODO CLARO*
+***************************************************** */
+
+.modo-light{
+   background-color: #ddd8e2;
+   background-image: url('./imagenes/light.jpeg');
+    
+}
+.modo-light .header{
+    background-color:#AAC4FF;
+}
+.modo-light h1, h2, h3{
+    color: black;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.modo-light .button-nav{
+    background-color: #41315f;
+}
+.modo-light .contenedor-gral{
+    background-image: url('./imagenes/light.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+} 
+.modo-light .caja-meme{
+    border: 1px solid #41315f;
+    box-shadow: -10px 10px 100px 5px rgb(0 0 0 / 30%);
+}
+.modo-light .columna-cambios{
+    background-color: #AAC4FF;
+}
+.modo-light input{
+    background-color: #fff;
+    color: #000;
+}  
+.modo-light textarea, .modo-light select{
+    background-color: #fff;
+    color: #000;
+}
+.modo-light .fuente-select{
+    background-color: #fff;
+}
+.modo-light .btn-color{
+    background-color: #fff;
+    color: #41315f;
+    font-weight: 600;
+}
+.modo-light .control-checkbox{
+    color: #191e2b;
+    font-weight: 500;
+}
+.modo-light .button-nav:hover{
+    background-color: #574479;
+}
+.modo-light textarea:hover{
+    background-color: #574479;
+    color:#fff;
+}
+.modo-light select:hover{
+    background-color: #574479;
+    color:#fff;
+}
+.modo-light .fuente-select:hover{
+    background-color: #574479;
+    color:#fff;
+}
+.modo-light .btn-color:hover{
+    background-color:#574479;
+    color: #fff;
+}
+.modo-light .input-color:hover{
+    background-color: #9c70e2;
+    color: #000;
+    font-weight: 500;
+}
+.modo-light .panel-control-input:hover{
+    background-color: #574479;
+    color:#fff;
+}
+.modo-light .control-input:hover{
+    background-color: #574479;
+    color:#fff;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+            HEADER
+++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.header{
+    background-color: #0A2647;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color .3s;
+}
+
+.button-nav{
+    font-size: .8em;
+    border-radius: 10%;
+    background-color:#191e2b;
+    color: #fff;
+    border-style: none;
+    padding: 5px;
+    
+}
+
+.button-nav:hover{
+    background-color: #395B64;
+    padding: 5px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+            CONTENEDOR CENTRAL - MEME
++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.contenedor-gral{
+    background-image: url('./imagenes/dark.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-meme{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.caja-meme{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    background-size:cover;
+    background-color: #000; 
+} 
+
+.text-superior{
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0%;     
+}
+#textoTop{
+    top: 0;
+}
+.text-inferior{
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 0;
+    position:relative;   
+}
+#textoInf{
+    bottom: 0;
+}
+#caja-imagen{
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.button-descarga{
+    margin: 10px;
+    padding: 12px 12px;
+    height: auto;
+    background-color: #7FBCD2;
+    color:#fff;
+    border: #7FBCD2;
+}
+.button-descarga:hover{
+    background-color: #748DA6;
+}
+
+
+/*//////// ESTILADO POR ETIQUETA/////////////////*/
+body{
+    background-color: #252935;;
+}
+h1{
+    font-size: 1.8em;
+    margin: 10px;
+    color: #fff;
+}
+h2{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #fff;   
+}
+h3{
+    font-size: .8em;
+    margin-top: 10px;  
+    color: #fff; 
+}
+textarea{
+    width: 100%;
+    height: 30px;
+    background-color: #526D82;
+    color: #fff;
+    text-align: center;
+}
+textarea:hover{
+    background-color: #393e49;
+}
+input, select{
+    display: block;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    height: 30px;
+    background-color: #526D82;
+    text-align: center;
+}
+input:hover, select:hover{
+    background-color: #41315f;
+}
+span{
+    font-size: .8em;
+}
+label{
+    font-size: 12px;
+} 
+
+/* ************************************************
+            COLUMNA DE CAMBIOS DE ESTILOS
+************************************************** */
+
+.columna-cambios{
+    background-color: #0A2647;
+    color: #fff;
+    flex-direction: column;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+    padding: 20px 15px;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    box-shadow: -10px 10px 100px 5px rgb(0 0 0 / 30%);
+    z-index: 5;
+    transition: background-color .4s;
+}
+/* ****************************************************
+            PANEL CAMBIOS - COLUMNA IMAGEN
+*************************************************** */
+.url-input{
+    width: 100%;
+    background-color:#574479;
+}
+.fondo-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/****INPUT RANGE: ESTILADO*** */
+
+.slidecontainer {
+    width: 100%;
+}
+  
+.barRango {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #574479;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+  
+.barRango:hover {
+    opacity: 1;
+  }
+  
+.barRango::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+}
+  
+.barRango::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a4f3;
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ******************************************
+            BOTON RESTABLECER FILTROS
+****************************************** */
+.restablecer{
+    background-color: #574479;
+    font-size: .8em;
+    color: #fff;
+    padding: 5px;
+    border: #574479;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.restablecer:hover{
+    background-color: #9c70e2;
+}
+/* ****************************************************
+            PANEL CAMBIOS - COLUMNA TEXTO
+*************************************************** */
+
+.control-input, .fuente-select{
+    width: 100%;
+    height: 30px;
+}
+.panel-control-input{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+.control-fuente{
+    display: flex;
+}
+.btn-aling{
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.btn-aling button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background-color: #526D82;
+}
+.panel-control-input:hover, .btn-aling button:hover{
+    background-color: #191e2b;
+}
+/* +++++++++++++++input-color-botones-boostrap */
+.input-color, .fuente-select{
+    background-color: #526D82;
+    font-size: .8em;
+    outline: 0;
+    border: 0; 
+}
+.input-color:focus{
+    background-color: #574479;
+    outline: none;
+    box-shadow: none;
+    margin: 0;
+}
+.input-color:hover, .fuente-select:hover{
+    background-color:#252935;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+}
+/* ++++++++++++++++++fin de estilado de botones framework */
+
+.ocultar{
+    display: none;
+}
+.transparente{
+    background-color: transparent !important;
+} 
+
+.control-checkbox{
+    font-size: .7em;
+    display: flex;
+    margin: 5px 0 ;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    color: inherit  
+}
+
+.color-texto,.btn-color{
+    display: flex; 
+    justify-content: space-around;  
+}
+.btn-color{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 1px;
+    background-color: #526D82;
+}
+.btn-color:hover{
+    background-color: #252935;
+}
+/* ++++++ ESTILADO DE INPUT TYPE COLOR ++++++++++++ */
+.incolor{
+    width: 50%;
+    margin-top: 10px;
+}
+
+#incolor, #incolor2, #incolor3{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+#incolor::-webkit-color-swatch {
+    border-radius: 50%;
+}
+#incolor2::-webkit-color-swatch {
+    border-radius: 50%;
+}
+#incolor3::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+/* +++++fin de estilado de input fondo y texto+++++++++ */
+
+/* 
+    ******************************************
+                REPONSIVE
+    ******************************************
+/* */
+.panel-close-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #9c70e2;
+    background-color: #393e49;  
+    display: none;
+}
+  
+@media (min-width: 769px) and (max-width: 1024px) {
+    .panel-cambios {
+      display: block;
+      box-shadow: none;
+    }
+    .panel-close-button {
+      display: block;
+      z-index: 6;
+      position: fixed;
+      top:15px;
+      right: 25px;
+    }
+    .columna-cambios{
+        width: 30%;
+    }
+    .control-fuente, .btn-group{
+        flex-wrap: wrap;
+    }
+}
+  
+@media (max-width: 768px) {
+    h1{
+      font-size: 26px;
+    }
+    .columna-cambios{
+        position: relative;
+        width: 100%;
+
+    }
+    .panel-cambios{
+      width: 100%;
+      display: block;
+    }
+    .contenedor-gral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .contenedor-meme{
+        width: 100%;
+        align-content: center;
+    }
+    .caja-meme{
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .panel-close-button{
+        display: none;
+    }
+    .fondo-div{
+        width: 100%;
+    }
+    .btn-color, .estilado{
+        width: 50%;
+    }
+    .btn-aling{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn-aling button{
+        width: 60px;
+        height: 30px;
+    }
+    .color-texto div, .btn-color{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn-group{
+        display: flex;
+        position: relative;
+    }
+}
